@@ -1,0 +1,703 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 100%;
+}
+/* Utility classes */
+h1{
+    font-family: 'Abril Fatface', cursive;
+    /* letter-spacing: -0.1cm; */
+    font-size: 70px;
+    color: #4a4a4a;
+    margin: 0px 0px 35px 0px;
+    text-align: center;
+}
+h4{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 25px;
+    color: #4a4a4a;
+    /* margin: 0px 0px 35px 0px; */
+}
+p{
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    line-height: 1cm;
+    text-align: center;
+}
+.para-sp
+{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 27px;
+    line-height: 1cm;
+    /* text-align: center; */
+}
+.span-sp{
+    font-family: 'Dancing Script', cursive;
+    font-size: 46px;
+    line-height: 1cm;
+    /* text-align: center; */
+    position: relative;
+    top: 50px;
+}
+span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.span1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin-left: 67px;
+}
+.span-popular{
+    
+}
+.btn{
+    background-color: #f5ffff;
+    margin-top: 30px;
+}
+.btn:hover{
+    padding:8px;
+    background-color: #9dafc1;
+    color: white;
+    font-size: 20px;
+}
+.btn1{
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    background-color: #48a9a6;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: #b3e6e5;
+    color:hsl(177, 63%, 21%);
+    padding:8px;
+    font-size: 20px;
+}
+/* Navbar Begins */
+.navbar-brand img{
+    height: 55px;
+    width: 230px;
+    margin-left: 30px;
+}
+.nav-link{
+    margin: 13px;
+    padding: 10px;
+    font-size: 18px
+}
+.navbar-home::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 600px;
+    width: 100%;
+    background: url(./bg5.jpg) no-repeat center center/cover;
+    z-index: -1;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:150px ;
+}
+.header h1{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 100px;
+}
+.content{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.popular{
+    margin: 115px 0px;
+}
+.popular::before{
+    content: "";
+    position: absolute;
+    top:600px;
+    /* left:0px; */
+    height: 600px;
+    width: 100%;
+    background-color:white;
+    z-index: -1;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin: 0px;
+    padding: 0px;
+}
+.card{
+    width: 200px;
+    height: 270px;
+    margin: 0px 5px;
+    transition: border.3s,border-radius .3s,opacity .3s;
+}
+.card:hover {
+    border: 10px solid turquoise;
+}
+.card-img:hover{
+    z-index: -1;
+}  
+.card-img-overlay {
+    position: absolute;
+    top: 20px;
+}
+.about .content .box{
+    margin: 0px 25px;
+    padding: 0px 49px;
+}
+
+.top{
+    margin: 50px 0px;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 95vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+header video 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+header .container
+{
+    position: relative;
+    z-index: 2;
+}
+header .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.01;
+    z-index: 1;
+}
+.best-offers{
+    flex-direction: column;
+    /* margin: 0px 120px; */
+}
+.best-offers .row .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 300px;
+    position: relative;
+    top: 22px;
+}
+.flip-card-back h1,
+.flip-card-back p,
+.flip-card-back span
+{
+    font-size: 25px;
+}
+.best-text{
+    width: 100%;
+    flex-direction: column;
+    padding: 0px 70px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-back {
+    background-color: #48a9a6;
+    color: white;
+    transform: rotateY(180deg);
+    width: 300px;
+    height: 300px;
+  }
+.slideshow{
+    flex-direction: column;
+}
+.slide-box{
+    flex-direction: column;
+    margin: 0px 200px 75px 200px;
+}
+.slider{
+    margin:0px 50px;
+    padding: 0px 4px;;
+    width: 85%;
+}
+.partners{
+    position: relative;
+    top: 85px;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.partners .logos img {
+    margin: 0px 60px ;
+}
+.partners .logos img:hover {
+    /* width:121px ;
+    height: 92.4px; */
+    color:black;
+    cursor: pointer;
+}
+
+.footer{
+    position: relative;
+    top: 79px;
+    width: 100%;
+    height: 100px;
+    color: white;
+    background-color: #48a9a6;
+}
+
+.navbar-about::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 550px;
+    width: 100%;
+    background: url(./about-wp.jpg) no-repeat center center/cover;
+    z-index: -1;
+}
+.heading-text{
+    position: relative;
+    top: 80px;
+    font-size: 115px;
+}
+.about-about{
+    position: relative;
+    top:300px;
+    flex-direction: column;
+}
+.about-box{
+    flex-direction: column;
+    margin: 0px 200px 0px 200px;
+}
+
+.about-right-box{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 25px;
+    padding: 50px;
+}
+.about-about-img{
+    width: 420px;
+    height: 505.4px;
+}
+
+.call-to-action {
+    position: relative;
+    top:380px;
+    background: linear-gradient(rgba(1, 41, 42, 0.5), rgba(7, 56, 57, 0.5)), url(./london.jpg) fixed center center;
+    background-size: cover;
+    padding: 60px 0;
+  }
+  .about-container{
+    background-color: #34c7bf;
+    position: relative;
+    top:-130px;
+    margin: 0px 50px;
+    padding: 0px 51px;
+  }
+  .call-to-action h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .about-container p {
+    color: #fff;
+  }
+  
+  .call-to-action .cta-btn {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .call-to-action .cta-btn:hover {
+    background: #000000;
+    border: 2px solid #000000;
+  }
+  .symbols{
+    position: relative;
+    top:380px;
+  }
+  .carousel-item{
+      display: flex;
+      height: 500px;
+      width: 100%;
+  }
+.sym{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 10%; */
+}
+.sym img{
+    width: 25%;
+}
+.footer-about{
+    position: relative;
+    top:750px;
+}
+.navbar-tours::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 550px;
+    width: 100%;
+    background: url(./tour.jpg) no-repeat center center/cover;
+    z-index: -1;
+}
+.heading-text-tour{
+    position: relative;
+    top: 160px;
+    font-size: 115px;
+}
+.tours-heading{
+    position: relative;
+    top:330px;
+}
+.tours .row{
+    position: relative;
+    top:320px;
+    margin:100px 5px;
+}
+.tours .row .column{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px 50px 0px 50px;
+    margin-bottom: 20px;
+}
+.t-text{
+    font-size: 32px;
+}
+.footer-tours{
+    position: relative;
+    top:300px;
+}
+.navbar-reviews::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 550px;
+    width: 100%;
+    background: url(./re.jpg) no-repeat center center/cover;
+    z-index: -1;
+}
+.footer-reviews{
+    position: relative;
+    top:220px;
+}
+.navbar-contact::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 550px;
+    width: 100%;
+    background: url(./conatct.jpg) no-repeat center center/cover;
+    /* opacity: 0.9; */
+    z-index: -1;
+}
+.heading-text-contact{
+    position: relative;
+    top: 200px;
+    font-size: 115px;
+}
+.contact{
+    position: relative;
+    top:386px;
+}
+.contact-box .left,
+.contact-box .right{
+    padding: 50px;
+    width: 50%;
+}
+.text-box{
+    width: 100%;
+    position: relative;
+    top: 2px;
+}
+.footer-contact{
+    position: relative;
+    top:380px;
+}
+
+@media (max-width:1200px){
+    .best-offers .row .column{
+        margin: 25px 0px;
+    }
+    .symbols {
+        position: relative;
+        top: 700px;
+    }
+    .footer-about {
+        position: relative;
+        top: 1060px;
+    }
+}
+@media (max-width:1120px){
+    /* d-flex justify-content-end */
+    .about-box {
+        position: relative;
+        top: 100px;
+    }
+    .span-popular {
+        margin-left: 56px;
+    }
+    .popular-h1{
+        font-size: 31px;
+    }
+    .content{
+        margin-top: 200px;
+        flex-direction: column;
+    }
+    .header h1{
+        font-size: 85px;
+    }
+    h1{
+        font-size: 55px;
+    }
+    .span1{
+        margin-left: 0px;
+    }
+    .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+    .partners .logos img {
+        margin: 0px 30px;
+    }
+    .about{
+        position: relative;
+        margin-top: 0px;
+    }
+    .about .content .box {
+        margin: 0px;
+        padding: 0px;
+        width: 80%;
+        margin: 0px 0px 50px 0px;
+    }
+    .slide-box{
+        width: 80%;
+    }
+    .card {
+        width: 30%;
+    }
+    .popular{
+        margin:-53px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: contents;
+    }
+    .contact-box{
+        flex-direction: column;
+    }
+    .contact-box .right{
+        position: relative;
+        top:-70px;
+    }
+    .contact-box .left,
+    .contact-box .right{
+        padding: 10px;
+        width: 100%;
+     }
+}
+@media (max-width:1000px){
+    .best-text{
+        width: 100%;
+    }
+    .symbols {
+        position: relative;
+        top: 900px;
+    }
+}
+@media (min-width:1000px){
+    /* d-flex justify-content-end */
+    .collapse{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width:885px)
+{
+    .content{
+        position: relative;
+        top:-38px;
+    }
+    .top {
+        position: relative;
+        top: -100px;
+    }
+    .header h1{
+        font-size: 70px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .partners .logos img {
+        margin: 0px 10px;
+    }
+    .about{
+        position: relative;
+        top:-136px;
+    }
+
+}
+@media (max-width:800px)
+{
+    .about-box{
+        width: 90%;
+    }
+    .about-right-box{
+        width: 90%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .about{
+    position: relative;
+    top:-136px;
+    }
+    .about-container .text-center{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 768px)
+{
+    .symbols {
+    position: relative;
+    top: 1400px;
+    }
+    .footer-about {
+        position: relative;
+        top: 1760px;
+    }
+}
+@media (max-width:665px)
+{   
+    .right {
+        flex-direction: column;
+    }
+    .card{
+        width: 60%;
+        height: 60%;
+        margin: 20px 0px;
+    }
+    .partners .logos img {
+        width: 79px;
+        height: 56px;
+    }
+
+}
+@media (max-width:500px){
+    .popular{
+        top:-100px;
+    }
+    .left {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .best-text{
+        margin: 0px 0px;
+        padding: 0px 30px;
+        width: 100%;
+    }
+    .contact-box .right{
+        top:50px;
+    }
+}
+@media (max-width:400px)
+{
+    .heading-text-contact,
+    .heading-text-tour,
+    .heading-text-tour,
+    .heading-text {
+        position: relative;
+        top: 263px;
+        font-size: 58px;
+    }
+    .navbar-brand img {
+        height: 44px;
+        width: 184px;
+        margin-left: 0px; 
+    }
+    .partners .logos img {
+        width: 60px;
+        height: 45px;
+    }
+}
+
