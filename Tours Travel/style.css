@@ -426,7 +426,7 @@ header .overlay
 }
 .tours .row .column{
     display: flex;
-    height: 600px;
+    height: 450px;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
